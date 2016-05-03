@@ -139,3 +139,109 @@ css3新增了rem单位及vw系列单位。rem单位是以html的字体大小为�
 
 - [can i use](http://caniuse.com/)
 - [各个浏览器hack](http://browserhacks.com/)
+
+
+
+故不登高山，不知天之高也；不临深溪，不知地之厚也。--摘自《劝学》
+
+## `::before` & `::after`
+
+相当于多了两个空白标签，可以放置一些修饰的点缀或内容等
+
+![伪元素](http://7tszky.com1.z0.glb.clouddn.com/FkkYfyLFf5KS4zd85l-ZE4n5MWvW)
+
+- [css3 生成内容](http://www.w3cplus.com/solution/css3content/css3content.html)
+- [A Whole Bunch of Amazing Stuff Pseudo Elements Can Do](https://css-tricks.com/pseudo-element-roundup/)
+
+## 字体
+
+字体方面主要包括：字体渲染方式，浏览器默认字体及重置，@font-face自定义字体，字体性能等
+
+- [字体渲染背后不得不说的故事](http://www.jianshu.com/p/8414b96549e3)
+- [字体渲染](http://ued.ctrip.com/blog/font-rendering.html)
+- [自定义字体@font-face详解](http://www.w3cplus.com/content/css3-font-face)
+- [移动端字体](https://github.com/AlloyTeam/Mars/blob/master/solutions/font-family.md)
+- [图标自定浅谈](http://isux.tencent.com/icon-font.html)
+- [google fonts](https://www.google.com/fonts)
+- [icomoon](https://icomoon.io/app/)
+
+
+## 图片
+
+总得来说，图片的使用分为background和img，而从优化方向来说分为减少请求和减少大小。
+
+图片优化原则：
+1. 能不使用就不使用（使用css3绘制简单的图形等）
+2. 矢量图与位图选择
+3. 挑选合适的图片格式（gif, png, jpg, webp等）及准备不同的规格大小（不同大小或retina屏）
+4. 合并（sprites）与压缩（有损压缩和无损压缩）
+
+资源链接：
+- [图片延迟加载的实现](http://stylechen.com/imglazyload2.html)
+- [CSS Gradients](https://css-tricks.com/css3-gradients/)
+- [css sprites](https://css-tricks.com/css-sprites/)
+- [图片优化 - 谷歌图片优化手册](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization?hl=zh-cn)
+- [baseline vs progressive](http://www.cnblogs.com/chayangge/p/4861369.html)
+- [图片原理与优化](http://tid.tenpay.com/?p=4711)
+- [WebP 探寻之路](http://isux.tencent.com/introduction-of-webp.html)
+- [Web性能优化：图片优化](http://cabbit.me/web-image-optimization/)
+
+## svg
+
+目前svg最大的用途在图标及动画，最大的优点在于矢量图，可以任意缩放不失真，而且大小还比较小。
+
+- [svg 兼容性](http://caniuse.com/#search=svg)
+- [Pocket guide to writing svg](http://svgpocketguide.com/book/)
+- [MDN svg tutorial](https://developer.mozilla.org/zh-CN/docs/Web/SVG/Tutorial)
+- [理解SVG的viewport,viewBox,preserveAspectRatio](http://www.zhangxinxu.com/wordpress/2014/08/svg-viewport-viewbox-preserveaspectratio/)
+- [SVG Sprite技术介绍](http://www.zhangxinxu.com/wordpress/2014/07/introduce-svg-sprite-technology/)
+- [SVG `symbol` a Good Choice for Icons](https://css-tricks.com/svg-symbol-good-choice-icons/)
+- [svg sprites 兼容js](svg4everybody)
+- [svg line animation](https://css-tricks.com/svg-line-animation-works/)
+- [超级强大的SVG SMIL animation动画详解](http://www.zhangxinxu.com/wordpress/2014/08/so-powerful-svg-smil-animation/)
+- [awesome svg](https://github.com/willianjusten/awesome-svg)
+
+
+### css3 动画
+
+分transition动画和animation动画，前者为两帧动画（只能控制开始和结束），而后者可以对任意帧进行更多处理。
+
+- [Intro to CSS 3D transforms](http://desandro.github.io/3dtransforms/)
+- [CSS3 Transitions 101](http://www.sitepoint.com/css3-transitions-101/)
+- [CSS3 Animations 101](http://www.sitepoint.com/css3-animations-101/)
+- [CSS3: Animations vs. Transitions](https://www.kirupa.com/html5/css3_animations_vs_transitions.htm)
+- [css3 动画疑难杂症](http://imweb.io/topic/5643850eed18cc424277050e)
+- [High Performance Animations](http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/)
+- [css triggers](https://csstriggers.com/)
+
+**动画库**
+- [animate.css](https://github.com/daneden/animate.css/)
+- [effeckt](http://h5bp.github.io/Effeckt.css/)
+- [hover.css](http://ianlunn.github.io/Hover/)
+- [animatable](http://leaverou.github.io/animatable/)
+- [css3 magic animation](http://www.minimamente.com/example/magic_animations/)
+
+### 响应式
+
+响应式主要包括断点的设置，及各种断点情况下样式的改变
+
+- [MDN CSS媒体查询](https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Media_queries)
+- [下手响应式及断点设置分析](http://imweb.io/topic/56dff5121a5f05dc506430da)
+- [响应式图片处理](http://www.w3cplus.com/blog/tags/509.html)
+- [Media Queries: Width vs. Device Width](http://www.sitepoint.com/media-queries-width-vs-device-width/)
+- [media queries resource](https://bradfrost.github.io/this-is-responsive/resources.html)
+- [案例参考](http://mediaqueri.es/)
+
+如果需要ie8-也支持相应式，得引入js库兼容，如[respond.js](https://github.com/scottjehl/Respond)（不建议ie8去做响应式）
+
+## 重排与重绘
+- [网页性能管理详解](http://www.ruanyifeng.com/blog/2015/09/web-page-performance-in-depth.html)
+- [10 Ways to Minimize Reflows and Improve Performance](http://www.sitepoint.com/10-ways-minimize-reflows-improve-performance/?utm_source=sitepoint&utm_medium=relatedsidebar&utm_term=html-css)
+
+## class命名
+- [如何命名class](http://imweb.io/topic/5623c25734764b2c16769749)
+- [BEM](http://getbem.com/naming/)
+- [CCSS](http://sathify.github.io/CCSS/)
+- [ACSS](http://patternlab.io/)
+- [SMACSS](https://smacss.com/)
+- [An Introduction To Object Oriented CSS (OOCSS)](http://www.w3cplus.com/blog/tags/284.html)
